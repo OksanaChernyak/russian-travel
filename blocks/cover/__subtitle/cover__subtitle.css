@@ -7,31 +7,15 @@
   line-height: 16px;
   text-align: center;
   position: relative;
-  margin: 0 16px 33px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 288px;
 }
 
 @media screen and (min-width: 768px) {
   .cover__subtitle {
     font-size: 18px;
     line-height: 22px;
-    margin-right: 204px;
-    margin-bottom: 115px;
-    margin-left: 204px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .cover__subtitle {
-    margin-right: 332px;
-    margin-bottom: 195px;
-    margin-left: 332px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .cover__subtitle {
-    margin-right: 412px;
-    margin-bottom: 245px;
-    margin-left: 412px;
+    max-width: 360px;
   }
 }

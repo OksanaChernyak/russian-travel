@@ -1,8 +1,18 @@
 .cover__background {
   background-image: url(../../../images/cover-trains.jpg);
   z-index: 2;
-  background-size: cover;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vw / 1.6);
+  /* Решила попробовать второй описанный вами способ, получилось, большое спасибо за столь изящный способ */
+  padding-top: 33px;
+  padding-bottom: 33px;
+  box-sizing: border-box;
 }
 
 .cover__background::before {
@@ -20,4 +30,26 @@
 
 .cover__background:hover::before {
   opacity: .8;
+}
+
+@media screen and (min-width: 768px) {
+  .cover__background {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cover__background {
+    padding-top: 195px;
+    padding-bottom: 195px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cover__background {
+    min-height: 740px;
+    padding-top: 245px;
+    padding-bottom: 245px;
+  }
 }

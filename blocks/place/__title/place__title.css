@@ -3,8 +3,8 @@
   font-size: 32px;
   line-height: 35px;
   text-align: start;
-  width: calc(100% - 16px*2);
   margin: 0 16px;
+  align-self: end;
 }
 
 @media screen and (min-width: 768px) {
